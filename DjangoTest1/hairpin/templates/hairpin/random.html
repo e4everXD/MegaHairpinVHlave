@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RNG</title>
+    <script>
+        function obnovitStranku() {
+            location.reload(); // Tato funkce obnoví aktuální stránku
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #97f7d7;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .centered-content {
+            text-align: center;
+        }
+
+         button {
+            padding: 10px;
+            align-self: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Generování Náhodného Čísla</h1>
+    </header>
+
+    <div class="centered-content">
+        <p>Vygenerováno: {{ random }}</p>
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+        <button onclick="obnovitStranku()">Obnovit stránku</button>
+    </div>
+
+    <footer>
+        &copy; 2024 Můj Superupltramegagigaúžasný Web
+    </footer>
+
+</body>
+</html>
